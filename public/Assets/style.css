@@ -1,0 +1,155 @@
+/* ALL */
+body
+{
+    margin: 0!important;
+    padding: 0!important;
+    background-color: #1A1A1A;
+}
+
+img
+{
+    width: 100%;
+}
+
+footer
+{
+    bottom: 0;
+    width: 100%;
+}
+
+.logo
+{
+    max-width: 190px;
+    padding-left: 10px;
+}
+
+.collapse ul li a:hover
+{
+    color: darkgrey!important;
+    transition: ease-out 1s;
+}
+
+.aktif
+{
+    background-color: #1A1A1A;
+    color: #fff!important;
+}
+
+
+/* Search */
+.search
+{
+    margin: 0!important;
+    /* padding: 0!important; */
+}
+
+/* Features */
+.features
+{
+    margin: 0!important;
+    padding: 0!important;
+    min-height: 100vh;
+}
+
+.features-1:hover p .border_menu,
+.features-2:hover p .border_menu
+{
+    border: 2px solid #fff;
+    transition: 1s;
+    background-color: #1A1A1A;
+}
+
+.title
+{
+    display: block;
+    margin-top: 50%;
+}
+
+.border_menu
+{
+    border: 2px solid #fff;
+    font-weight: 700;
+    padding: 10px 30px;
+    font-size: 1.5em;
+}
+
+.features-1
+{
+    background-size: cover;
+    background-image: url(image/features-1.jpg);
+}
+.features-2
+{
+    background-size: cover;
+    background-image: url(image/features-2.jpg);
+}
+
+.features-1:hover,.features-2:hover 
+{
+    opacity: 0.9;
+    cursor: pointer;
+}
+/* Info */
+.info
+{
+    margin: 0!important;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #000;
+}
+
+.info p
+{
+    font-size: 0.8em;
+}
+
+.info-border
+{
+    border-right: 1px solid white;
+}
+
+@media(max-width: 768px){
+    .search
+    {
+        display: none;
+    }
+
+    .navbar-nav
+    {
+        margin: 0!important;
+    }
+
+    .navbar-brand
+    {
+        display: block;
+    }
+    .logo
+    {
+        padding: 0;
+    }
+
+    .btn-login
+    {
+        padding: 0px 20px;
+    }
+}
+
+@media(max-width: 500px){
+    .info
+    {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        border: none;
+    }
+    .info-border
+    {
+        border: none;
+        border-bottom: 1px solid #fff;
+    }
+
+    .features p 
+    {
+        margin-top: 25%;
+    }
+
+}
